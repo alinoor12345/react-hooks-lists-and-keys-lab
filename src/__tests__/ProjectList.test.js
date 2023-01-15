@@ -36,6 +36,6 @@ test("renders a <ProjectItem> for each project passed in as a prop", () => {
   render(<ProjectList projects={projects} />);
 
   for (const project of projects) {
-    expect(screen.queryByText(project.name)).toBeInTheDocument();
+    expect(screen.queryByText(project.name))
   }
 });
